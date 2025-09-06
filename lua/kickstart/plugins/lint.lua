@@ -7,8 +7,10 @@ return {
       local lint = require 'lint'
       lint.linters_by_ft = {
         markdown = { 'markdownlint' },
+        python = { 'flake8' },
       }
-
+      -- 下面的意思是如果希望其他插件能够添加lint 不要这样做。而是按照下面的方法来
+      --
       -- To allow other plugins to add linters to require('lint').linters_by_ft,
       -- instead set linters_by_ft like this:
       -- lint.linters_by_ft = lint.linters_by_ft or {}
