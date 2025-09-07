@@ -8,6 +8,7 @@ return {
       lint.linters_by_ft = {
         markdown = { 'markdownlint' },
         python = { 'flake8' },
+        go = { 'golangcilint' },
       }
       -- 下面的意思是如果希望其他插件能够添加lint 不要这样做。而是按照下面的方法来
       --
